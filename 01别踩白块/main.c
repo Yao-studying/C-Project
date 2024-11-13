@@ -16,7 +16,7 @@ void Draw(int Map[Line][Clom])
     {
         for (int j = 0; j < Clom; j++)
         {
-            if (map[i][j] == 0)
+            if (map[i][j] == 0) // 这里正确的应该是用Map，如果是用map的话，根本没有必要传递数组地址，因为这个数组的全局的
             {
                 // 最后一行调成绿色
                 setlinecolor(BLACK);
